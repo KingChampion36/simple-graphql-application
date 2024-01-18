@@ -1,0 +1,8 @@
+type Address {
+  firstLine: String!
+  secondLine: String
+  landmark: String
+  pinCode: Int!
+  state: String!
+  country: String!
+}

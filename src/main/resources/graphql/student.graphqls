@@ -1,0 +1,12 @@
+type Student {
+  id: ID!
+  name: String! # ! means it can't return null
+  year: String!
+  branch: String!
+  subjectsTaken: [String]!
+  address: Address!
+}
+
+type Query {
+  students(name: String, year: String, branch: String) : [Student]!
+}
